@@ -25,13 +25,13 @@ responses:
   - text: "Espero que eso te haya ayudado"
 
   utter_happy:
-  - text: "Great, carry on!"
+  - text: "Genial, sigue adelante!"
 
   utter_goodbye:
-  - text: "Bye"
+  - text: "Adios"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "Soy un bot, impulsado por Rasa."
 
 session_config:
   session_expiration_time: 60
