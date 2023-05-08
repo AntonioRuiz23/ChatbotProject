@@ -1,7 +1,7 @@
 version: "3.1"
 
 nlu:
-- intent: saludar
+- intent: greet
   examples: |
     - hola
     - buenos días
@@ -15,7 +15,7 @@ nlu:
     - hi
     - hello
 
-- intent: despedirse
+- intent: goodbye
   examples: |
     - adiós
     - chao
@@ -25,7 +25,7 @@ nlu:
     - bye
     - goodbye
 
-- intent: afirmar
+- intent: affirm
   examples: |
     - sí
     - claro
@@ -33,14 +33,14 @@ nlu:
     - suena bien
     - correcto
 
-- intent: negar
+- intent: deny
   examples: |
     - no
     - nunca
     - no me gusta
     - de ninguna manera
 
-- intent: buen_estado_animo
+- intent: mood_great
   examples: |
     - genial
     - perfecto
@@ -52,7 +52,7 @@ nlu:
     - súper bien
     - excelente
 
-- intent: mal_estado_animo
+- intent: mood_unhappy
   examples: |
     - mi día fue horrible
     - estoy triste
@@ -69,3 +69,56 @@ nlu:
     - estoy hablando con un bot?
     - eres humano o un bot?
     - eres un robot?
+
+- intent: thank
+  examples: |
+    - gracias
+    - muchas gracias
+    - te lo agradezco
+    - gracias por tu ayuda
+    - agradecido
+    - te agradezco
+
+- intent: polite_goodbye
+  examples: |
+    - hasta pronto
+    - nos vemos pronto
+    - que tengas un buen día
+    - que tengas una buena tarde
+    - que tengas una buena noche
+    - cuídate
+    - adiós y hasta la próxima
+    - hasta la próxima
+
+- intent: ask_for_help
+  examples: |
+    - necesito ayuda
+    - ¿me puedes ayudar?
+    - ¿puedes ayudarme?
+    - ¿qué puedo hacer?
+    - no entiendo
+    - ¿me explicas?
+    - ¿puedes darme más información?
+
+- intent: ask_personal_info
+  examples: |
+    - ¿cómo te llamas?
+    - ¿cuál es tu nombre?
+    - ¿quién eres?
+    - ¿qué eres?
+    - háblame de ti
+    - preséntate
+    - ¿eres humano o un bot?
+    - ¿de dónde eres?
+
+- intent: ask_company_info
+  examples: |
+    - ¿qué es esta empresa?
+    - ¿de qué se trata esta empresa?
+    - ¿en qué trabaja esta empresa?
+    - ¿cuál es el objetivo de esta empresa?
+    - ¿quiénes son los fundadores de la empresa?
+    - ¿dónde se encuentra la empresa?
+    - ¿cuál es el teléfono de la empresa?
+    - ¿tienen sitio web?
+
