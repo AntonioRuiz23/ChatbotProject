@@ -14,6 +14,7 @@ responses:
   - text: "Hello There"
   - text: "Hi"
   - text: "Nice to see you"
+  - text: "Hi there"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
