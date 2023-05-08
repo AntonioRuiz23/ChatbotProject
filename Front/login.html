@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+  <form class="login-form">
+    <h1>Iniciar Sesión</h1>
+    <label for="username">Email:</label>
+    <input type="text" id="username" name="username" required>
+    <label for="password">Contaseña:</label>
+    <input type="password" id="password" name="password" required>
+    <div class="remember-forgot">
+      <label for="remember-me">
+        <input type="checkbox" id="remember-me" name="remember-me">
+        Recuerdame 
+      </label>
+      <br>
+      <a href="#">Olvidaste tu contraseña?</a>
+      <br><br>
+    </div>
+    <button type="submit" id="inicio">Iniciar sesión</button>
+    <p class="or">o</p>
+    <div class="social-login">
+      <a href="#"  class="google"><ion-icon  name="logo-google"></ion-icon></a>
+      <a href="#" class="facebook"><ion-icon name="logo-facebook" ></ion-icon></a>
+    </div>
+    <p class="signup">No tienes cuenta? <a href="Registrarse.html">Registrate</a></p>
+  </form>
+</body>
+</html>
