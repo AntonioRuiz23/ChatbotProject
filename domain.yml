@@ -11,17 +11,18 @@ intents:
 
 responses:
   utter_greet:  
-  - text: "Hello There"
-  - text: "Hi"
-  - text: "Nice to see you"
-  - text: "Hi there"
+  - text: "Hola, ¿Que tal?"
+  - text: "Hola"
+  - text: "Me alegro de verte"
+  - text: "Hey"
 
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
+  - text: "Aqui tienes algo para animarte:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
-  - text: "Did that help you?"
+  - text: "¿Te ha ayudado?"
+  - text: "Espero que eso te haya ayudado"
 
   utter_happy:
   - text: "Great, carry on!"
