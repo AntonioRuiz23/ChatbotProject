@@ -7,12 +7,5 @@ from django.shortcuts import render
 class HomePageView(TemplateView):
     template_name = "core/home.html"
 
-    """
-    def login(request):
-    return render(request, "core/login.html")
-
-
-def register(request):
-    return render(request, "core/register.html")
-    
-    """
+    def get(self, request, *args, **kwargs):
+        return render(request, self.template_name, {'title': "Mi super Web Playground"})

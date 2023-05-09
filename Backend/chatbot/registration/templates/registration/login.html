@@ -1,35 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Login</title>
-  <link rel="stylesheet" href="style.css">
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</head>
-<body>
-  <form class="login-form">
-    <h1>Iniciar Sesión</h1>
-    <label for="username">Email:</label>
-    <input type="text" id="username" name="username" required>
-    <label for="password">Contaseña:</label>
-    <input type="password" id="password" name="password" required>
-    <div class="remember-forgot">
-      <label for="remember-me">
-        <input type="checkbox" id="remember-me" name="remember-me">
-        Recuerdame 
-      </label>
-      <br>
-      <a href="#">Olvidaste tu contraseña?</a>
-      <br><br>
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Iniciar sesión{% endblock %}
+{% block content %}
+<style>.errorlist{color:red;}</style>
+<main role="main">
+  <div class="container">
+    <div class="row mt-3">
+      <div class="col-md-9 mx-auto mb-5">
+        <form action="" method="post">{% csrf_token %}
+          <h3 class="mb-4">Iniciar sesión</h3>
+          {% if form.non_field_errors %}
+            <p style="color:red">Usuario o contraseña incorrectos, prueba de nuevo.</p>
+          {% endif %}
+          <p>
+            <input type="text" name="username" autofocus maxlength="254" required
+              id="id_username" class="form-control" placeholder="Nombre de usuario"/>
+          </p>
+          <p>
+            <input type="password" name="password" required
+              id="id_password" class="form-control" placeholder="Contraseña"/>
+          </p>
+          <p><input type="submit" class="btn btn-primary btn-block" value="Acceder"></p>
+        </form>
+      </div>
     </div>
-    <button type="submit" id="inicio">Iniciar sesión</button>
-    <p class="or">o</p>
-    <div class="social-login">
-      <a href="#"  class="google"><ion-icon  name="logo-google"></ion-icon></a>
-      <a href="#" class="facebook"><ion-icon name="logo-facebook" ></ion-icon></a>
-    </div>
-    <p class="signup">No tienes cuenta? <a href="Registrarse.html">Registrate</a></p>
-  </form>
-</body>
-</html>
+  </div>
+</main>
+{% endblock %}
