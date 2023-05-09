@@ -7,23 +7,34 @@
   <div class="container">
     <div class="row mt-3">
       <div class="col-md-9 mx-auto mb-5">
-        <form action="" method="post">{% csrf_token %}
-          <h3 class="mb-4">Iniciar sesión</h3>
-          {% if form.non_field_errors %}
-            <p style="color:red">Usuario o contraseña incorrectos, prueba de nuevo.</p>
-          {% endif %}
-          <p>
-            <input type="text" name="username" autofocus maxlength="254" required
-              id="id_username" class="form-control" placeholder="Nombre de usuario"/>
-          </p>
-          <p>
-            <input type="password" name="password" required
-              id="id_password" class="form-control" placeholder="Contraseña"/>
-          </p>
-          <p><input type="submit" class="btn btn-primary btn-block" value="Acceder"></p>
+        <form method="POST" class="login-form">
+          <h1>Iniciar Sesión</h1>
+          <label for="username">Email:</label>
+          <input type="text" name="username" autofocus maxlength="254" required
+          id="id_username" class="form-control" placeholder="Nombre de usuario"/>
+          <label for="password">Contaseña:</label>
+          <input type="password" name="password" required
+                      id="id_password" class="form-control" placeholder="Contraseña"/>
+          <div class="remember-forgot">
+            <label for="remember-me">
+              <input type="checkbox" id="remember-me" name="remember-me">
+              Recuerdame 
+            </label>
+            <br>
+            <a href="#">Olvidaste tu contraseña?</a>
+            <br><br>
+          </div>
+          <button type="submit" id="inicio">Iniciar sesión</button>
+          <p class="or">o</p>
+          <div class="social-login">
+            <a href="#"  class="google"><ion-icon  name="logo-google"></ion-icon></a>
+            <a href="#" class="facebook"><ion-icon name="logo-facebook" ></ion-icon></a>
+          </div>
+          <p class="signup">No tienes cuenta? <a href="Registrarse.html">Registrate</a></p>
         </form>
       </div>
     </div>
   </div>
 </main>
 {% endblock %}
+
