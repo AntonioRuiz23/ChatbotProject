@@ -1,19 +1,246 @@
 {
    "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hello",
+        "Hi",
+        "Hey there",
+        "Good morning",
+        "Good afternoon",
+        "Good evening"
+      ],
+      "responses": [
+        "Hello! How can I assist you today?",
+        "Hi there! What can I help you with?",
+        "Hey! What brings you here today?",
+        "Good [morning/afternoon/evening]! How may I be of service?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Goodbye",
+        "Bye",
+        "See you later",
+        "Talk to you soon"
+      ],
+      "responses": [
+        "Goodbye! Have a great day!",
+        "Bye for now! Let me know if you need anything else.",
+        "See you later! Take care.",
+        "Talk to you soon! Have a good one."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thank you",
+        "Thanks",
+        "Appreciate it"
+      ],
+      "responses": [
+        "You're welcome!",
+        "No problem!",
+        "My pleasure!",
+        "Glad I could help!"
+      ]
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "I need help",
+        "Can you help me",
+        "What can you do"
+      ],
+      "responses": [
+        "Sure, I'll do my best to assist you. What do you need help with?",
+        "Of course, what's the issue you're facing?",
+        "Absolutely, what can I help you with?"
+      ]
+    },
+    {
+      "tag": "name",
+      "patterns": [
+        "What's your name?",
+        "Who are you?",
+        "Do you have a name?"
+      ],
+      "responses": [
+        "My name is ChatGPT. How can I assist you?",
+        "I'm ChatGPT. Nice to meet you!",
+        "You can call me ChatGPT. What brings you here today?"
+      ]
+    },
+    {
+      "tag": "age",
+      "patterns": [
+        "How old are you?",
+        "When were you born?",
+        "What's your age?"
+      ],
+      "responses": [
+        "I'm just a computer program, so I don't have an age!",
+        "I was created recently, so I'm still quite young!",
+        "I don't age like humans do, so I don't have an age to tell you."
+      ]
+    },
+    {
+      "tag": "favorites",
+      "patterns": [
+        "What's your favorite color?",
+        "What's your favorite food?",
+        "Do you have any hobbies?"
+      ],
+      "responses": [
+        "As a computer program, I don't have personal preferences!",
+        "I don't have a favorite color or food, but I'm always learning about new things.",
+        "I don't have hobbies like humans do, but I enjoy helping people and answering questions!"
+      ]
+    }
+    ,
      {
-       "tag": "greeting",
-       "patterns": ["hello", "hi", "hey"],
-       "responses": ["Hi there!", "Hello!", "Greetings!"]
-     },
-     {
-       "tag": "goodbye",
-       "patterns": ["bye", "see you later", "goodbye"],
-       "responses": ["Goodbye!", "See you later!", "Have a nice day!"]
-     },
-     {
-       "tag": "thanks",
-       "patterns": ["thank you", "thanks", "appreciate it"],
-       "responses": ["You're welcome!", "No problem!", "My pleasure!"]
-     }
+      "tag": "weather",
+      "patterns": [
+        "What's the weather like?",
+        "What's the temperature outside?",
+        "Will it rain today?"
+      ],
+      "responses": [
+        "The weather is sunny and warm today.",
+        "It's currently 20 degrees Celsius outside.",
+        "There's a 30% chance of rain today."
+      ]
+    },
+    {
+      "tag": "time",
+      "patterns": [
+        "What time is it?",
+        "Can you tell me the time?",
+        "Do you know what time it is?"
+      ],
+      "responses": [
+        "I'm sorry, I don't have access to the current time.",
+        "I don't have a clock, but you can check the time on your phone or computer.",
+        "I'm not sure about the time right now, but I hope you're not running late for anything!"
+      ]
+    },
+    {
+      "tag": "joke",
+      "patterns": [
+        "Tell me a joke",
+        "Do you know any good jokes?",
+        "Make me laugh"
+      ],
+      "responses": [
+        "Why don't scientists trust atoms? Because they make up everything!",
+        "Why did the tomato turn red? Because it saw the salad dressing!",
+        "Why don't dinosaurs drive cars? Because they're extinct!"
+      ]
+    },
+    {
+      "tag": "restaurant",
+      "patterns": [
+        "Can you recommend a good restaurant?",
+        "What's the best place to eat?",
+        "Do you have any vegetarian options?"
+      ],
+      "responses": [
+        "I recommend trying out XYZ restaurant. They have great reviews.",
+        "If you're looking for a fancy dining experience, ABC restaurant is a great choice.",
+        "Yes, we have a variety of vegetarian options available on our menu."
+      ]
+    },
+    {
+      "tag": "booking",
+      "patterns": [
+        "I want to book a room.",
+        "Can you help me make a reservation?",
+        "What are your rates?"
+      ],
+      "responses": [
+        "Sure, let me check our availability for you.",
+        "Of course, what dates are you looking to book?",
+        "Our rates vary depending on the season and room type. What kind of room are you interested in?"
+      ]
+    },
+    {
+      "tag": "name",
+      "patterns": [
+        "What's your name?",
+        "May I know your name?",
+        "What should I call you?"
+      ],
+      "responses": [
+        "My name is Chatbot!",
+        "You can call me Chatbot.",
+        "I go by the name of Chatbot."
+      ]
+    },
+    {
+      "tag": "location",
+      "patterns": [
+        "Where are you from?",
+        "What's your location?",
+        "Where were you created?"
+      ],
+      "responses": [
+        "I'm a digital assistant and don't have a physical location.",
+        "I was created by OpenAI and my location is in the cloud.",
+        "I'm everywhere and nowhere, since I exist purely in the digital realm."
+      ]
+    },
+    {
+      "tag": "purpose",
+      "patterns": [
+        "What's your purpose?",
+        "Why were you created?",
+        "What do you do?"
+      ],
+      "responses": [
+        "My purpose is to help you with your questions and provide assistance.",
+        "I was created to make your life easier and help you with tasks.",
+        "I'm here to provide you with information and answer your questions to the best of my abilities."
+      ]
+    },
+    {
+      "tag": "personality",
+      "patterns": [
+        "What kind of personality do you have?",
+        "Are you friendly?",
+        "Can I trust you?"
+      ],
+      "responses": [
+        "I'm designed to be polite and helpful, and I don't have emotions or a personality like humans do.",
+        "I'm always friendly and professional, and I'm here to help you in any way I can.",
+        "I'm a computer program, so I don't have the ability to be trustworthy or untrustworthy. However, I'm programmed to provide accurate information to the best of my abilities."
+      ]
+    },
+    {
+      "tag": "thanks_advanced",
+      "patterns": [
+        "Thank you so much!",
+        "You're amazing!",
+        "I really appreciate your help!"
+      ],
+      "responses": [
+        "You're welcome! I'm glad I could be of assistance.",
+        "Thank you for your kind words. It was my pleasure to help!",
+        "I'm happy to be able to assist you. Don't hesitate to ask if you need anything else."
+      ]
+    },
+    {
+      "tag": "personal_life",
+      "patterns": [
+        "How are you doing?",
+        "What did you do today?",
+        "What are your hobbies?"
+      ],
+      "responses": [
+        "I'm an artificial intelligence and don't have emotions, but I'm always here to assist you!",
+        "As an AI, I don't have the ability to do things outside of my programmed functions, but I'm always available to help you!",
+        "I don't have personal hobbies, but I'm designed to be helpful and answer your questions to the best of my abilities."
+      ]
+    }
    ]
  }
