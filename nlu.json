@@ -1,5 +1,32 @@
 {
    "intents": [
+    
+    {
+      "tag": "name",
+      "patterns": [
+        "What's your name?",
+        "Who are you?",
+        "Do you have a name?",
+        "what is your name",
+        "name",
+        "name",
+        "what's your name",
+        "who are you",
+        "what should I call you",
+        "May I know your name?"
+      ],
+      "responses": [
+        "My name is ChatGPT. How can I assist you?",
+        "I'm ChatGPT. Nice to meet you!",
+        "You can call me ChatGPT. What brings you here today?",
+        "You can call me Beebot",
+        "I'm Beebot",
+        "I'm Beebot your virtual assistant",
+        "My name is Chatbot!",
+        "You can call me Chatbot.",
+        "I go by the name of Chatbot."
+      ]
+    },
 
     {
       "tag": "greetings",
@@ -80,6 +107,21 @@
     },
 
     {
+      "tag": "personal_life",
+      "patterns": [
+        "How are you?",
+        "How are you doing?",
+        "What did you do today?",
+        "What are your hobbies?"
+      ],
+      "responses": [
+        "I'm an artificial intelligence and don't have emotions, but I'm always here to assist you!",
+        "As an AI, I don't have the ability to do things outside of my programmed functions, but I'm always available to help you!",
+        "I don't have personal hobbies, but I'm designed to be helpful and answer your questions to the best of my abilities."
+      ]
+    },
+    
+    {
       "tag": "help",
       "patterns": [
         "I need help",
@@ -90,20 +132,6 @@
         "Sure, I'll do my best to assist you. What do you need help with?",
         "Of course, what's the issue you're facing?",
         "Absolutely, what can I help you with?"
-      ]
-    },
-
-    {
-      "tag": "name",
-      "patterns": [
-        "What's your name?",
-        "Who are you?",
-        "Do you have a name?"
-      ],
-      "responses": [
-        "My name is ChatGPT. How can I assist you?",
-        "I'm ChatGPT. Nice to meet you!",
-        "You can call me ChatGPT. What brings you here today?"
       ]
     },
 
@@ -220,20 +248,6 @@
     },
 
     {
-      "tag": "name",
-      "patterns": [
-        "What's your name?",
-        "May I know your name?",
-        "What should I call you?"
-      ],
-      "responses": [
-        "My name is Chatbot!",
-        "You can call me Chatbot.",
-        "I go by the name of Chatbot."
-      ]
-    },
-
-    {
       "tag": "location",
       "patterns": [
         "Where are you from?",
@@ -272,42 +286,6 @@
         "I'm designed to be polite and helpful, and I don't have emotions or a personality like humans do.",
         "I'm always friendly and professional, and I'm here to help you in any way I can.",
         "I'm a computer program, so I don't have the ability to be trustworthy or untrustworthy. However, I'm programmed to provide accurate information to the best of my abilities."
-      ]
-    },
-
-   
-
-    {
-      "tag": "personal_life",
-      "patterns": [
-        "How are you doing?",
-        "What did you do today?",
-        "What are your hobbies?"
-      ],
-      "responses": [
-        "I'm an artificial intelligence and don't have emotions, but I'm always here to assist you!",
-        "As an AI, I don't have the ability to do things outside of my programmed functions, but I'm always available to help you!",
-        "I don't have personal hobbies, but I'm designed to be helpful and answer your questions to the best of my abilities."
-      ]
-    },
-
-
-
-
-    {
-      "tag": "name",
-      "patterns": [
-        "what is your name",
-        "name",
-        "name",
-        "what's your name",
-        "who are you",
-        "what should I call you"
-      ],
-      "responses": [
-        "You can call me Beebot",
-        "I'm Beebot",
-        "I'm Beebot your virtual assistant"
       ]
     },
 
@@ -356,7 +334,6 @@
       "responses": ["There are two semesters in a year."]
     },
    
-
     {
       "tag": "semDuration",
       "patterns": [
@@ -462,8 +439,6 @@
         "Course BIT\nAdmission fee=RS 91,656\nYear 1\nUniversity and Exam fee= RS 100,000 Each semester fee=RS 69,000 Total fee= RS 334,000\nYear 2\nUniversity and Exam fee= RS 100,000 Each semester fee=RS 69,000 Total fee= RS 238,000\nYear 3\nUniversity and Exam fee= RS 100,000 Each semester fee=RS 69,000 Total fee= RS 238,000\nGrandTotal fee= RS 810,000\n\nCourse BBA\nAdmission fee=RS 96,000\nYear 1\nUniversity and Exam fee= RS 100,000 Each semester fee=RS 52,000 Total fee= RS 300,000\nYear 2\nUniversity and Exam fee= RS 100,000 Each semester fee=RS 52,000 Total fee= RS 204,000\nYear 3\nUniversity and Exam fee= RS 100,000 Each semester fee=RS 52,000 Total fee= RS 204,000\nYear 4\nUniversity and Exam fee= RS 50,000 Semester fee=RS 52,000 Total fee= RS 102,000\nGrandTotal fee= RS 810,000"
       ]
     },
-
-    
 
     {
       "tag": "invalid",
